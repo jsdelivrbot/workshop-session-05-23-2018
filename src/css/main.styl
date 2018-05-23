@@ -1,5 +1,13 @@
 @import './test.css';
 
+@font-face {
+  font-family: BentonSans-Lt;
+  src: local('BentonSans-Lt');
+  src: url(/assets/481b5db4-48a0-4c43-ae8b-fd1a0b7cb481-3.woff)
+  format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
 body {
 font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -26,6 +34,9 @@ h1 {
   margin:auto;
   cursor: pointer;
 }
+.rotate-icon {
+  transform: rotate(180deg);
+}
 
 .hide-menu {
   display: none;
@@ -35,23 +46,51 @@ h1 {
   width: 100%;
   top: 0;
   left: 0;
+  transition: all 1s ease;
 }
 .dropdown-menu ul{
   margin: 0;
   color: #006fcf;
   font-weight: normal;
   font-family: BentonSans-Lt, helvetica, sans-serif;
-  font-size: 4px;
-  padding: 4px;
+  font-size: 18px;
+  padding: 0;
   list-style: none;
   background: #fff;
+  border: 0.1px solid #E6E6E6;
 }
 .dropdown-menu ul li{
-  height: 10px;
-  border-bottom: gray solid 0.1px;
-  margin: 4px;
-}
+  border-bottom: 0.1px solid #E6E6E6;
+  padding: 18px;
 
+}
+.dropdown-menu ul li.menu-subtitle {
+  color: #777;
+  margin-top: 18px;
+}
+.dropdown-menu ul li.menu-sub-menu {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.dropdown-menu .login-button {
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  margin-bottom: .625rem;
+  padding: .5rem 2.5rem;
+  font-size: 1rem;
+  line-height: 1.46;
+  border-radius: .25rem;
+  color: #fff;
+  background: #1274b8;
+  position: relative;
+  float: right;
+  top: -9px;
+}
 .hero{
   color: #fff;
   height: 204px;
