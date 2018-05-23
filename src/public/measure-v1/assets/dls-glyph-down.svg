@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>dls-glyph-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="US-JFD-small" transform="translate(-270.000000, -84.000000)">
+            <g id="08-glyphs/dls-glyph-down" transform="translate(270.000000, 81.000000)">
+                <g id="dls-glyph-down">
+                    <rect id="bounding" x="0" y="0" width="15" height="15"></rect>
+                    <path d="M13.789401,4.02345923 C13.4252688,3.65884692 12.8294188,3.65884692 12.4652856,4.02345923 L7.50000089,8.99534086 L2.53471523,4.02345923 C2.17058236,3.65884692 1.57473295,3.65884692 1.2105998,4.02345923 C0.846466641,4.38807155 0.846466828,4.9847062 1.2105998,5.34931852 L6.83797533,10.9840415 C7.20210802,11.3486538 7.7979022,11.3486538 8.16202458,10.9840415 L13.7894001,5.34930998 C14.1535333,4.9847062 14.1535333,4.38806264 13.789401,4.02345923 Z" fill="#006FCF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

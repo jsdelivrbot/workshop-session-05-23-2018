@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>dls-icon-minus-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Secondary-Navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-page---less-info" transform="translate(-299.000000, -351.000000)">
+            <g id="Group-14" transform="translate(0.000000, 336.000000)">
+                <g id="Expenses" transform="translate(261.000000, 15.000000)">
+                    <g id="05-membership/dls-icon-airplane" transform="translate(38.000000, 0.000000)">
+                        <g id="dls-icon-minus-circle">
+                            <rect id="bounding" x="0" y="0" width="28" height="28"></rect>
+                            <path d="M14,0 C21.7319794,0 28,6.26802062 28,14 C28,21.7319794 21.7319783,28 14,28 C6.26802173,28 0,21.7319783 0,14 C0,6.26802173 6.26802173,0 14,0 Z M14,26.25 C20.7546918,26.25 26.25,20.7546562 26.25,14 C26.25,7.24530934 20.7546907,1.75 14,1.75 C7.24530934,1.75 1.75,7.24530934 1.75,14 C1.75,20.7546562 7.24530934,26.25 14,26.25 Z M20.125,13.125 C20.6080707,13.125 21,13.5166445 21,14 C21,14.4833555 20.6080707,14.875 20.125,14.875 L7.875,14.875 C7.39164393,14.875 7,14.4833555 7,14 C7,13.5166445 7.39164393,13.125 7.875,13.125 L20.125,13.125 Z" fill="#63666A"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
