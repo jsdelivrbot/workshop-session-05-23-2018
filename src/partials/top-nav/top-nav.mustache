@@ -2,11 +2,10 @@
     <div class="brand-logo">
         <amp-img src="/assets/topNav.png" width="790" height="104" layout="responsive"></amp-img>
     </div>
-    <div class="drop-down-button">
-        <amp-img src="/assets/arrowdown.png" width="12" height="7" layout="responsive" on="tap:sidebar.toggle"></amp-img>
+    <div class="drop-down-button" onclick="toggleMenu()">
+        <amp-img src="/assets/arrowdown.png" width="12" height="7" layout="responsive"></amp-img>
     </div>
-    <amp-sidebar id="sidebar" layout="nodisplay" side="right">
-        <amp-img class="amp-close-image" src="/img/ic_close_black_18dp_2x.png" width="20" height="20" alt="close sidebar" on="tap:sidebar.close" role="button" tabindex="0"></amp-img>
+    <div id="dropdownMenu" class="dropdown-menu hide-menu">
         <ul>
             <li>
                 <a>Small to Mid-Sized Businesses</a>
@@ -32,5 +31,11 @@
                 <a>FX International Payments Login</a>
             </li>
         </ul>
-    </amp-sidebar>
+    </div>
 </div>
+<script>
+    function toggleMenu() {
+        document.getElementById("dropdownMenu").classList.toggle("hide-menu");
+        document.getElementsByClassName("drop-down-button")[0].classList.toggle("rotate-icon");
+    }
+</script>
