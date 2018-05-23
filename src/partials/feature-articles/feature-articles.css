@@ -1,6 +1,6 @@
 .feature-articles-carousel{
   overflow: scroll;
-  white-space: nowrap
+  white-space: nowrap;
 }
 .article_img{
   margin-bottom: 20px;
@@ -12,14 +12,4 @@
   display: inline-block;
   width: 100%;
   white-space: normal;
-}
-
-.blue-box {
-  background: blue;
-}
-.green-box {
-  background: green;
-}
-.red-box {
-  background: red;
 }
