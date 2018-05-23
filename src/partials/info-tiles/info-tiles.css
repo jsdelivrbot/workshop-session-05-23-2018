@@ -5,7 +5,7 @@
   margin: 30px 10px 10px 10px;
 }
 .info-tile_img{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .tile-header {
   margin-bottom: 5px;
@@ -32,6 +32,7 @@
   color: #006FCF;
   letter-spacing: 0;
   text-align: left;
+  margin-top: 25px;
 }
 .info-tile_footnote{
   margin-bottom: 5px;
