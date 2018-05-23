@@ -10,196 +10,6 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <style amp-custom>{{{pageCssContent}}}</style>
-  <style amp-custom>
-    body {
-	  font-family: 'Roboto', sans-serif;
-      font-weight: 300;
-      font-size: 1em;
-    }
-
-    h1 {
-      margin: 1rem;
-    }
-
-    .clear {
-      clear: both;
-      border: 0;
-      padding: 0;
-      margin: 0;
-    }
-
-    .tracing-image {
-      background: url(https://slack-imgs.com/?c=1&url=https%3A%2F%2Fs3.invisionapp-cdn.com%2Fk8s-private-aexp-cluster%2Fscreens%2Ffiles%2F219575135.jpg%3Fx-amz-meta-iv%3D3%26response-cache-control%3Dmax-age%253D2419200%26x-amz-meta-ck%3Df5908afbb337851d7f7e61ce5b6de08e%26AWSAccessKeyId%3DAKIAIAWTUDIXJUYQSXEQ%26Expires%3D1530403200%26Signature%3D%252BrVZQKrj1BxT2pW8waA99u%252FBSIc%253D) no-repeat;
-      background-size: 100%;
-      height: 3108px;
-    }
-
-    .menu-banner {
-        display: flex;
-    }
-    .brand-logo {
-        width: 85%;
-    }
-    .drop-down-button {
-        width:7%;
-        margin:auto;
-        cursor: pointer;
-    }
-
-    .hide-menu {
-        display: none;
-    }
-    .dropdown-menu {
-        position: absolute;
-        width: 100%;
-    }
-    .hero{
-      color: #fff;
-      height: 204px;
-      padding: 32px 19px;
-      position: relative;
-
-      background: url(https://slack-imgs.com/?c=1&url=https%3A%2F%2Fs3.invisionapp-cdn.com%2Fk8s-private-aexp-cluster%2Fscreens%2Ffiles%2F219575135.jpg%3Fx-amz-meta-iv%3D3%26response-cache-control%3Dmax-age%253D2419200%26x-amz-meta-ck%3Df5908afbb337851d7f7e61ce5b6de08e%26AWSAccessKeyId%3DAKIAIAWTUDIXJUYQSXEQ%26Expires%3D1530403200%26Signature%3D%252BrVZQKrj1BxT2pW8waA99u%252FBSIc%253D) no-repeat;
-      background-size: 100%;
-      background-position: 0px -68px;
-    }
-
-    .hero-header {
-      font-weight: 300;
-      font-size: 1.7em;
-      line-height: 1.3;
-      letter-spacing: 0.7px;
-      margin-bottom: 22px;
-    }
-
-    .hero-sub-header {
-      font-size: .9em;
-      font-weight: 300;
-      line-height: 1.4em;
-      margin-bottom: 16px;
-    }
-
-    .hero-tagline {
-      font-size: 1.24em;
-    }
-
-    .square-btns {
-      width: 100%;
-      height: 222px;
-      background-color: #F00;
-      /*display: none;*/
-    }
-
-    .square-btn {
-      float: left;
-      height: 111px;
-      width: 125px;
-      background-color: #0F0;
-    }
-    .square-btn.blue {
-      background-color: #1271cd;
-    }
-
-    .get-started {
-      background-color: #fff;
-      padding: 10% 5%;
-    }
-
-    .get-started .head {
-      font-family: BentonSans-Book;
-      font-size: 24px;
-      color: #4E5356;
-      line-height: 30px;
-    }
-
-    .get-started .text {
-      font-family: BentonSans-Book;
-      font-size: 14px;
-      color: #727272;
-      letter-spacing: 0;
-      line-height: 24px;
-    }
-
-    .get-started .card:first-child {
-      margin-right: 5%;
-    }
-
-    .get-started .cards {
-      margin-top: 20px;
-    }
-
-    .get-started .card {
-      width: 47.5%;
-      display: block;
-      float: left;
-    }
-
-    .get-started button {
-      border-radius: 4px;
-      font-family: HelveticaNeue;
-      font-size: 16px;
-      text-align: center;
-      width: 100%;
-      height: 50px;
-      margin-top: 20px;
-    }
-
-    .get-started button.primary {
-      background: #006FCF;
-      color: #FFFFFF;
-    }
-
-    .get-started button.secondary {
-      background: #FFFFFF;
-      border: 1px solid #006FCF;
-      color: #006FCF;
-    }
-
-    .info-tiles {
-      background: #F7F8F9;;
-    }
-    .info-tile {
-      margin: 0 10px 10px 10px;
-    }
-    .info-tile_img{
-     min-height: 11rem;
-    }
-    .tile-header {
-      margin-bottom: 5px;
-      font-family: BentonSans-Book;
-      font-size: 16px;
-      color: #333333;
-      letter-spacing: 0;
-      text-align: left;
-      line-height: 16px;
-    }
-    .info-tile_content{
-      margin-bottom: 5px;
-      font-family: BentonSans-Book;
-      font-size: 14px;
-      color: #63666A;
-      letter-spacing: 0;
-      text-align: left;
-      line-height: 22px;
-    }
-    .link{
-      margin-bottom: 5px;
-      font-family: BentonSans-Book;
-      font-size: 14px;
-      color: #006FCF;
-      letter-spacing: 0;
-      text-align: left;
-    }
-    .info-tile_footnote{
-      margin-bottom: 5px;
-      font-family: BentonSans-Book;
-      font-size: 10px;
-      color: #63666A;
-      letter-spacing: 0;
-      text-align: left;
-      line-height: 16px;
-    }
-  </style>
 </head>
 
 <body>
@@ -276,7 +86,7 @@
     </div>
     <div class="info-tiles vertical-tiles">
       <div class="info-tile">
-        <div class="info-tile_img"><img src='./assets/card-group.png'></img><!-- 3 Card Img --></div>
+        <div class="info-tile_img"><img height='157px' width='245px' src='./assets/card-group.png'></img><!-- 3 Card Img --></div>
         <div class="info-tile_header tile-header">Business Credit Cards</div>
         <div class="info-tile_copy tile-copy">Credit Cards that let you buy above your credit limit<sup>*</sup>, for purchasing power to help buy what you need for your business</div>
         <div class="link">See all Business Cards</div>
@@ -284,17 +94,17 @@
       </div>
 
       <div class="info-tile">
-        <div class="info-tile_img"><img src='./assets/laughing-workers.png'></img><!-- Smile people img --></div>
+        <div class="info-tile_img"><img height='157px' width='245px' src='./assets/laughing-workers.png'></img><!-- Smile people img --></div>
         <div class="info-tile_header tile-header">Business Loans</div>
-        <div class="info-tile_content">Unsecured, fixed-rate business loans between $3,500 and $50,000<sup>*</sup> with your choice of repayment period, for pre-approved Card Members</div>
+        <div class="info-tile_copy tile-copy">Unsecured, fixed-rate business loans between $3,500 and $50,000<sup>*</sup> with your choice of repayment period, for pre-approved Card Members</div>
         <div class="link">Learn More</div>
         <div class="info-tile_footnote">*You must be pre-approved for an American Express<sup>&reg;</sup> Business Loan offer in order to apply. Your pre-approved loan amount and maximum APR are based on the creditworthiness of you and your business and other factors. Not all customers will be pre-approved for the lowest APR or the highest loan amount.</div>
       </div>
 
       <div class="info-tile">
-        <div class="info-tile_img"><img src='./assets/homemade-twister.png'></img><!-- Homemade twister img --></div>
+        <div class="info-tile_img"><img height='157px' width='245px' src='./assets/homemade-twister.png'></img><!-- Homemade twister img --></div>
         <div class="info-tile_header tile-header">Merchant Financing</div>
-        <div class="info-tile_content">Fixed-fee, no interest business loans between $5000 and $2,000,000, offered exclusively to businesses that accept American Express<sup>&reg;</sup> Cards. Terms Apply.</div>
+        <div class="info-tile_copy tile-copy">Fixed-fee, no interest business loans between $5000 and $2,000,000, offered exclusively to businesses that accept American Express<sup>&reg;</sup> Cards. Terms Apply.</div>
         <div class="link">Learn More</div>
       </div>
     </div>
@@ -304,12 +114,12 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </span>
       <div class="cards">
-        <img class="card" src='https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/open/category/cardarts/business-gold-rewards.png' alt='Business Gold Rewards Card'>
-        <img class="card" src='https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/corporate/category/cardarts/corporate-platinum.png' alt='Corporate Platinum Card'>
+        <img class="card" width="47.5%" src='https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/open/category/cardarts/business-gold-rewards.png' alt='Business Gold Rewards Card'>
+        <img class="card" width="47.5%" src='https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/corporate/category/cardarts/corporate-platinum.png' alt='Corporate Platinum Card'>
         <div class="clear"></div>
       </div>
-      <button class="primary">View all Business Cards</button>
-      <button class="secondary">View all Corporate Programs</button>
+      <a class="primary" href="https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/">View all Business Cards</button>
+      <a class="secondary" href="https://www.americanexpress.com/us/credit-cards/business/corporate-credit-cards/">View all Corporate Programs</button>
     </div>
     <div class="featured-articles horizontal-tiles scrolling-tiles-horizontal">
       <div class="featured-article">
@@ -325,9 +135,9 @@
       <div class="footer_country-toggle"><span class="us-flag-icon"></span> United States <span class="link">Change Country</span></div>
       <div class="footer_language-toggle">English | <span class="link">Spanish</span></div>
       <div class="footer_links">
-        <a href="https://www.google.com/" class="link">Website Rules and Regulations</a> | 
-        <a href="https://www.google.com/" class="link">Trademarks</a> | 
-        <a href="https://www.google.com/" class="link">Privacy Statement</a> | 
+        <a href="https://www.google.com/" class="link">Website Rules and Regulations</a> |
+        <a href="https://www.google.com/" class="link">Trademarks</a> |
+        <a href="https://www.google.com/" class="link">Privacy Statement</a> |
         <a href="https://www.google.com/" class="link">Business Directory</a>
       </div>
       <div class="footer_copyright-text">Copyright &copy; 2016 American Express Company</div>

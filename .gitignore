@@ -1,7 +1,7 @@
 # Node build artifacts
 node_modules
 npm-debug.log
-dist/
+
 
 # Local development
 *.env
@@ -9,6 +9,7 @@ dist/
 .DS_Store
 *.tmp*
 cached-data.json
+dist
 
 # Docker
 Dockerfile
