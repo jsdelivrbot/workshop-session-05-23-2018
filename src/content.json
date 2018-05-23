@@ -1,6 +1,27 @@
 {
   "content": {
     "testing": "hello",
+    "wineIndustry": {
+      "copy": "How Currency Exchange Risks Help Shape the International Wine Industry",
+      "cta": {
+        "body": "Read case study",
+        "url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-simply-cash-credit-card-amex"
+      }
+    },
+    "risingInterest": {
+      "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...",
+      "cta": {
+        "body": "Read article",
+        "url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-simply-cash-credit-card-amex"
+      }
+    },
+    "featureArticle3": {
+      "copy": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      "cta": {
+        "body": "Learn More",
+        "url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-simply-cash-credit-card-amex"
+      }
+    },
     "startingYourBusiness": {
       "copy": "Automatic cash back and no annual fee",
       "cta": {

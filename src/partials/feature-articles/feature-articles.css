@@ -1,0 +1,15 @@
+.feature-articles-carousel{
+  overflow: scroll;
+  white-space: nowrap;
+}
+.article_img{
+  margin-bottom: 20px;
+}
+.article-tile {
+  margin: 30px 20px 10px 20px;
+}
+.article {
+  display: inline-block;
+  width: 100%;
+  white-space: normal;
+}

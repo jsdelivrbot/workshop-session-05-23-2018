@@ -1,73 +1,27 @@
 <!doctype html>
 <html ⚡>
-
-<head>
-  <meta charset="utf-8">
-  <title>American Express</title>
-  <link rel="canonical" href="self.html" />
-  <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <style amp-custom></style>
-</head>
-
-<body>
-  <div class="tracing-image">
-    <div class="menu-banner">
-    </div>
-    <div class="hero">
-      <div class='hero-header'>
-        Whatever size your <br />business, American <br />Express has your back
-      </div>
-      <div class='hero-sub-header'>
-        Explore the many ways American Express can help you say yes to your companies best ideas.
-      </div>
-      <div class='hero-tagline'>
-        How can we help you?
-      </div>
-    </div>
-    <div class="square-btns">
-      <div class="square-btn">
-        Borrow funds to<br />grow your<br />business
-      </div>
-      <div class="square-btn">
-        Maximize rewards<br />on business spend
-      </div>
-      <div class="square-btn">
-        Manage employee<br />expenses
-      </div>
-      <div class="square-btn">
-        Improve accounts<br />payable processes
-      </div>
-      <div class="square-btn">
-        Pay suppliers<br />globally
-      </div>
-      <div class="square-btn blue">
-        Need Help<br />Deciding?
-      </div>
-    </div>
-    <div class="semantic-filter">
-      I'm looking for products for my
-      <div>
-        Choose Business Size <span class="down-arrow"></span> <span class="link reset-link">Reset</span>
-      </div>
-    </div>
-    {{> ./partials/info-tiles/info-tiles.amp.mustache }}
+  <head>
+    <meta charset="utf-8">
+    <title>American Express</title>
+    <link rel="canonical" href="self.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp-custom></style>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  </head>
+  <body>
+    <div class="tracing-image">
+      {{> ./partials/top-nav/top-nav.mustache }}
+      {{> ./partials/hero/hero.mustache }}
+      {{> ./partials/square-btns/square-btns.mustache }}
+      {{> ./partials/semantic-filter/semantic-filter.amp.mustache }}
+      {{> ./partials/info-tiles/info-tiles.amp.amp.mustache }}
       {{> ./partials/get-started/get-started.amp.mustache }}
-    <div class="featured-articles horizontal-tiles scrolling-tiles-horizontal">
-      <div class="featured-article">
-      	<div class="featured-article-img"></div>
-      	<div class="featured-article-header tile-header"></div>
-      	<div class="featured-article-copy tile-copy"></div>
-        <div class="link"></div>
-      </div>
-      <div class="featured-articles-footer">Swipe across to view more articles</div>
+      {{> ./partials/feature-articles/feature-articles.amp.mustache }}
+      {{> ./partials/footer/footer.mustache }}
     </div>
-    <div class="footer">
-
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
