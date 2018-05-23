@@ -28,11 +28,15 @@
     }
 
     .menu-banner {
-      background: url(https://commercial-card.americanexpress.com/assets/desktop-b/images/banner-dont-do-business.png) no-repeat;
-      background-size: 61% auto;
-      background-color: #fff;
-      background-position: 19.5px 34.5px;
-      height: 68px;
+        display: flex;
+    }
+    .brand-logo {
+        width: 85%;
+    }
+    .drop-down-button {
+        width:7%;
+        margin:auto;
+        cursor: pointer;
     }
 
     .hero{
@@ -135,8 +139,14 @@
 
 <body>
   <div class="tracing-image">
-    <div class="menu-banner">
-    </div>
+      <div class="menu-banner">
+          <div class="brand-logo">
+              <amp-img src="/assets/topNav.png" width="790" height="104" layout="responsive"></amp-img>
+          </div>
+          <div class="drop-down-button">
+              <amp-img src="/assets/arrowdown.png" width="12" height="7" layout="responsive"></amp-img>
+          </div>
+      </div>
     <div class="hero">
       <div class='hero-header'>
         Whatever size your <br />business, American <br />Express has your back
