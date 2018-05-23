@@ -14,14 +14,7 @@
 
 <body>
   <div class="tracing-image">
-      <div class="menu-banner">
-          <div class="brand-logo">
-              <amp-img src="/assets/topNav.png" width="790" height="104" layout="responsive"></amp-img>
-          </div>
-          <div class="drop-down-button" onclick="toggleMenu()">
-              <amp-img src="/assets/arrowdown.png" width="12" height="7" layout="responsive"></amp-img>
-          </div>
-      </div>
+    {{> ./partials/top-nav/top-nav.mustache }}
     {{> ./partials/hero/hero.mustache }}
     <div class="square-btns">
       <div class="square-btn">
@@ -73,12 +66,6 @@
       <div class="footer_copyright-text">Copyright &copy; 2016 American Express Company</div>
     </div>
   </div>
-  <script>
-      function toggleMenu() {
-          document.getElementById("dropdownMenu").classList.toggle("hide-menu");
-          document.getElementsByClassName("drop-down-button")[0].classList.toggle("rotate-icon");
-      }
-  </script>
 </body>
 
 </html>
