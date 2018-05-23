@@ -1,7 +1,7 @@
 <div class="get-started">
-  <h2 class="head">Ready to get started?</h2>
+  <h2 class="head">{{content.getStarted.head}}</h2>
   <span class="text">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    {{content.getStarted.text}}
   </span>
   <div class="cards">
     <amp-img
@@ -9,19 +9,19 @@
       width="380"
       height="240"
       layout="responsive"
-      src='https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/open/category/cardarts/business-gold-rewards.png'
-      alt='Business Gold Rewards Card'
+      src="{{content.getStarted.gold.src}}"
+      alt="{{content.getStarted.gold.alt}}"
     ></amp-img>
     <amp-img
       class="card"
       width="480"
       height="304"
       layout="responsive"
-      src='https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/corporate/category/cardarts/corporate-platinum.png'
-      alt='Corporate Platinum Card'
+      src="{{content.getStarted.platinum.src}}"
+      alt="{{content.getStarted.platinum.alt}}"
     ></amp-img>
     <div class="clear"></div>
   </div>
-  <a class="primary" href="https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/">View all Business Cards</button>
-  <a class="secondary" href="https://www.americanexpress.com/us/credit-cards/business/corporate-credit-cards/">View all Corporate Programs</button>
+  <a class="primary" href="{{content.getStarted.business.link}}">{{content.getStarted.business.text}}</a>
+  <a class="secondary" href="{{content.getStarted.corporate.link}}">{{content.getStarted.corporate.text}}</a>
 </div>
