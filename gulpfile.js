@@ -23,13 +23,22 @@ const replaceExtension = require('replace-ext')
 const escapeRegex = require('escape-string-regexp');
 const Mustache = require("mustache");
 const R = require("ramda");
-const replace = require('gulp-replace');
 
 const assets = function () {
   gulp.src("./src/assets/**/*")
     .pipe(flatten())
     .pipe(gulp.dest('dist/assets'));
 }
+
+const html = function () {
+  gulp.src("./dist/*.html")
+      .pipe(include())
+      .pipe(inject.after('style amp-custom>', getCssContent(path.join(__dirname, 'dist/css/main.css'))))
+      .pipe(gulp.dest("./dist")).on('end', assets)
+      .pipe(reload({
+          stream: true
+        }));
+};
 
 const getMustacheData = function (file) {
   const files = [
@@ -112,14 +121,6 @@ gulp.task('mustache', ['stylus'], function() {
 
         file.data = R.merge(templateData.data, contentData);
 
-        const content = [
-          getCssContent(path.join(__dirname, 'dist/css/main.css')),
-        ];
-
-        if(dirPath === path.join(__dirname, 'src')) {
-          file.data.pageCssContent = content.join('\n');
-        }
-
         fs.writeFileSync(path.join(__dirname, './cached-data.json'), JSON.stringify(file.data, null, '\t'))
 
     		callback(null, file);
@@ -128,7 +129,8 @@ gulp.task('mustache', ['stylus'], function() {
     .pipe(mustache(null, {
       extension: '.html'
     }))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist'))
+    .on('end', html);
 });
 
 gulp.task('stylus', function() {
