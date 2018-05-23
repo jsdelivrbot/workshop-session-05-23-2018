@@ -9,6 +9,7 @@
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <style amp-custom>{{{pageCssContent}}}</style>
   <style amp-custom>
     body {
 	  font-family: 'Roboto', sans-serif;
@@ -18,6 +19,13 @@
 
     h1 {
       margin: 1rem;
+    }
+
+    .clear {
+      clear: both;
+      border: 0;
+      padding: 0;
+      margin: 0;
     }
 
     .tracing-image {
@@ -80,6 +88,106 @@
     .square-btn.blue {
       background-color: #1271cd;
     }
+
+    .get-started {
+      background-color: #fff;
+      padding: 10% 5%;
+    }
+
+    .get-started .head {
+      font-family: BentonSans-Book;
+      font-size: 24px;
+      color: #4E5356;
+      line-height: 30px;
+    }
+
+    .get-started .text {
+      font-family: BentonSans-Book;
+      font-size: 14px;
+      color: #727272;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
+
+    .get-started .card:first-child {
+      margin-right: 5%;
+    }
+
+    .get-started .cards {
+      margin-top: 20px;
+    }
+
+    .get-started .card {
+      width: 47.5%;
+      display: block;
+      float: left;
+    }
+
+    .get-started button {
+      border-radius: 4px;
+      font-family: HelveticaNeue;
+      font-size: 16px;
+      text-align: center;
+      width: 100%;
+      height: 50px;
+      margin-top: 20px;
+    }
+
+    .get-started button.primary {
+      background: #006FCF;
+      color: #FFFFFF;
+    }
+
+    .get-started button.secondary {
+      background: #FFFFFF;
+      border: 1px solid #006FCF;
+      color: #006FCF;
+    }
+
+    .info-tiles {
+      background: #F7F8F9;;
+    }
+    .info-tile {
+      margin: 0 10px 10px 10px;
+    }
+    .info-tile_img{
+     min-height: 11rem;
+    }
+    .tile-header {
+      margin-bottom: 5px;
+      font-family: BentonSans-Book;
+      font-size: 16px;
+      color: #333333;
+      letter-spacing: 0;
+      text-align: left;
+      line-height: 16px;
+    }
+    .info-tile_content{
+      margin-bottom: 5px;
+      font-family: BentonSans-Book;
+      font-size: 14px;
+      color: #63666A;
+      letter-spacing: 0;
+      text-align: left;
+      line-height: 22px;
+    }
+    .link{
+      margin-bottom: 5px;
+      font-family: BentonSans-Book;
+      font-size: 14px;
+      color: #006FCF;
+      letter-spacing: 0;
+      text-align: left;
+    }
+    .info-tile_footnote{
+      margin-bottom: 5px;
+      font-family: BentonSans-Book;
+      font-size: 10px;
+      color: #63666A;
+      letter-spacing: 0;
+      text-align: left;
+      line-height: 16px;
+    }
   </style>
 </head>
 
@@ -126,7 +234,7 @@
     </div>
     <div class="info-tiles vertical-tiles">
       <div class="info-tile">
-        <div class="info-tile_img"><!-- 3 Card Img --></div>
+        <div class="info-tile_img"><img src='./assets/card-group.png'></img><!-- 3 Card Img --></div>
         <div class="info-tile_header tile-header">Business Credit Cards</div>
         <div class="info-tile_copy tile-copy">Credit Cards that let you buy above your credit limit<sup>*</sup>, for purchasing power to help buy what you need for your business</div>
         <div class="link">See all Business Cards</div>
@@ -134,7 +242,7 @@
       </div>
 
       <div class="info-tile">
-        <div class="info-tile_img"><!-- Smile people img --></div>
+        <div class="info-tile_img"><img src='./assets/laughing-workers.png'></img><!-- Smile people img --></div>
         <div class="info-tile_header tile-header">Business Loans</div>
         <div class="info-tile_content">Unsecured, fixed-rate business loans between $3,500 and $50,000<sup>*</sup> with your choice of repayment period, for pre-approved Card Members</div>
         <div class="link">Learn More</div>
@@ -142,14 +250,24 @@
       </div>
 
       <div class="info-tile">
-        <div class="info-tile_img"><!-- Homemade twister img --></div>
+        <div class="info-tile_img"><img src='./assets/homemade-twister.png'></img><!-- Homemade twister img --></div>
         <div class="info-tile_header tile-header">Merchant Financing</div>
         <div class="info-tile_content">Fixed-fee, no interest business loans between $5000 and $2,000,000, offered exclusively to businesses that accept American Express<sup>&reg;</sup> Cards. Terms Apply.</div>
         <div class="link">Learn More</div>
       </div>
     </div>
     <div class="get-started">
-      <!-- Trevin Built this one already. -->
+      <h2 class="head">Ready to get started?</h2>
+      <span class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </span>
+      <div class="cards">
+        <img class="card" src='https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/open/category/cardarts/business-gold-rewards.png' alt='Business Gold Rewards Card'>
+        <img class="card" src='https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/corporate/category/cardarts/corporate-platinum.png' alt='Corporate Platinum Card'>
+        <div class="clear"></div>
+      </div>
+      <button class="primary">View all Business Cards</button>
+      <button class="secondary">View all Corporate Programs</button>
     </div>
     <div class="featured-articles horizontal-tiles scrolling-tiles-horizontal">
       <div class="featured-article">
@@ -161,7 +279,16 @@
       <div class="featured-articles-footer">Swipe across to view more articles</div>
     </div>
     <div class="footer">
-
+      <div class="footer_amex-logo"><!-- Amex logo img --></div>
+      <div class="footer_country-toggle"><span class="us-flag-icon"></span> United States <span class="link">Change Country</span></div>
+      <div class="footer_language-toggle">English | <span class="link">Spanish</span></div>
+      <div class="footer_links">
+        <a href="https://www.google.com/" class="link">Website Rules and Regulations</a> | 
+        <a href="https://www.google.com/" class="link">Trademarks</a> | 
+        <a href="https://www.google.com/" class="link">Privacy Statement</a> | 
+        <a href="https://www.google.com/" class="link">Business Directory</a>
+      </div>
+      <div class="footer_copyright-text">Copyright &copy; 2016 American Express Company</div>
     </div>
   </div>
 </body>

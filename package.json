@@ -34,6 +34,7 @@
     "gulp-mustache": "^3.0.1",
     "gulp-plumber": "1.2.0",
     "gulp-rename": "^1.2.3",
+    "gulp-replace": "^1.0.0",
     "gulp-stylus": "^2.7.0",
     "js-yaml": "^3.11.0",
     "mustache": "^2.3.0",
