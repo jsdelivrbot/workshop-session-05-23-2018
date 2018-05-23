@@ -18,8 +18,6 @@
     "express": "^4.15.2"
   },
   "devDependencies": {
-    "request": "^2.81.0",
-    "tape": "^4.7.0",
     "browser-sync": "2.23.6",
     "connect-history-api-fallback": "1.5.0",
     "del": "^3.0.0",
@@ -39,8 +37,11 @@
     "js-yaml": "^3.11.0",
     "mustache": "^2.3.0",
     "plugin-error": "^1.0.1",
+    "ramda": "^0.25.0",
     "replace-ext": "^1.0.0",
+    "request": "^2.81.0",
     "run-sequence": "2.2.1",
+    "tape": "^4.7.0",
     "through2": "^2.0.3"
   },
   "repository": {
