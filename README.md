@@ -2,9 +2,6 @@
 
 #### Last Updated 05/22/2018
 
-#### Build Source
-`npm run build`
-
 #### Local development
 `npm run dev`
 
