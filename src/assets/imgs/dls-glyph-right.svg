@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="11px" viewBox="0 0 6 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>dls-glyph-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Secondary-Navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-page---less-info" transform="translate(-16.000000, -2800.000000)">
+            <g id="footer-03-sm" transform="translate(1.000000, 2720.000000)">
+                <g id="links" transform="translate(0.000000, 64.411135)">
+                    <g id="nav-secondary-About-American-Express">
+                        <g id="dls-glyph-right" transform="translate(11.968085, 15.096360)">
+                            <rect id="bounding" x="0" y="0" width="11.9680851" height="12.0770878"></rect>
+                            <path d="M8.76381766,5.50549279 L4.26802122,0.974702354 C3.97710714,0.681523198 3.50106885,0.681523198 3.21020684,0.974702354 C2.91929276,1.26788151 2.91929276,1.74758042 3.21020684,2.04075195 L7.17708841,6.03852533 L3.21020721,10.0363355 C2.91929313,10.3295148 2.91929313,10.8092138 3.21020721,11.1023851 C3.50106923,11.3955651 3.97711462,11.3955651 4.2680216,11.1023851 L8.76381766,6.5715876 C9.05473174,6.27841539 9.05473174,5.79867172 8.76381766,5.50549279 Z" fill="#53565A"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
