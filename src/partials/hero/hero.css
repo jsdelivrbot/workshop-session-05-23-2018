@@ -3,7 +3,7 @@
   color: #fff;
   padding: 32px 19px;
   position: relative;
-  background: url(./assets/hero-bg.png) no-repeat;
+  background: url(/assets/hero-bg.png) no-repeat;
   background-size: 100%;
 }
 

@@ -13,7 +13,7 @@
   margin-left: 0;
 }
 .american-logo-flag {
-  background: url(./assets/iNav_ngi_sprite_new.png) no-repeat;
+  background: url(/assets/iNav_ngi_sprite_new.png) no-repeat;
   background-position: -172px -475px;
   margin: 1px 4px 0 0;
   width: 16px;

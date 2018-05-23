@@ -1,24 +1,26 @@
-<div class="info-tiles vertical-tiles">
-  <div class="info-tile">
-    <div class="info-tile_img"><amp-img height='157' width='245' layout='responsive' src='./assets/card-group.png'></amp-imgs><!-- 3 Card Img --></div>
-    <div class="info-tile_header tile-header">Business Credit Cards</div>
-    <div class="info-tile_copy tile-copy">{{{content.vacTile.copy}}}</div>
-    <div class="link"><a href={{{content.vacTile.cta.url}}}></a>{{content.vacTile.cta.body}}</div>
-    <div class="info-tile_footnote">{{{content.vacTile.disclaimer}}}</div>
-  </div>
+<div [class]="tilesContent[currentAnimal].style">
+  <div class="info-tiles vertical-tiles">
+    <div class="info-tile biz-loans">
+      <div class="info-tile_img"><amp-img height='157' width='245' layout='responsive' src='/assets/laughing-workers.png'></amp-img><!-- Smile people img --></div>
+      <div class="info-tile_header tile-header">Business Loans</div>
+      <div class="info-tile_copy tile-copy">{{{content.businessLoans.copy}}}</div>
+      <div class="link"><a href={{{content.businessLoans.cta.url}}}>{{{content.businessLoans.cta.body}}}</a></div>
+      <div class="info-tile_footnote">{{{content.businessLoans.disclaimer}}}</div>
+    </div>
 
-  <div class="info-tile">
-    <div class="info-tile_img"><amp-img height='157' width='245' layout='responsive' src='./assets/laughing-workers.png'></amp-img><!-- Smile people img --></div>
-    <div class="info-tile_header tile-header">Business Loans</div>
-    <div class="info-tile_copy tile-copy">{{{content.businessLoans.copy}}}</div>
-    <div class="link"><a href={{{content.businessLoans.cta.url}}}>{{{content.businessLoans.cta.body}}}</a></div>
-    <div class="info-tile_footnote">{{{content.businessLoans.disclaimer}}}</div>
-  </div>
+    <div class="info-tile merch-finance">
+      <div class="info-tile_img"><amp-img height='157' width='245' layout='responsive' src='/assets/homemade-twister.png'></amp-img><!-- Homemade twister img --></div>
+      <div class="info-tile_header tile-header">Merchant Financing</div>
+      <div class="info-tile_copy tile-copy">{{{content.merchantFinancing.copy}}}</div>
+      <div class="link"><a href={{{content.merchantFinancing.cta.url}}}>{{{content.merchantFinancing.cta.body}}}</a></div>
+    </div>
 
-  <div class="info-tile">
-    <div class="info-tile_img"><amp-img height='157' width='245' layout='responsive' src='./assets/homemade-twister.png'></amp-img><!-- Homemade twister img --></div>
-    <div class="info-tile_header tile-header">Merchant Financing</div>
-    <div class="info-tile_copy tile-copy">{{{content.merchantFinancing.copy}}}</div>
-    <div class="link"><a href={{{content.merchantFinancing.cta.url}}}>{{{content.merchantFinancing.cta.body}}}</a></div>
+    <div class="info-tile biz-cards">
+      <div class="info-tile_img"><amp-img height='157' width='245' layout='responsive' src='/assets/card-group.png'></amp-imgs><!-- 3 Card Img --></div>
+      <div class="info-tile_header tile-header">Business Credit Cards</div>
+      <div class="info-tile_copy tile-copy">{{{content.vacTile.copy}}}</div>
+      <div class="link"><a href={{{content.vacTile.cta.url}}}></a>{{content.vacTile.cta.body}}</div>
+      <div class="info-tile_footnote">{{{content.vacTile.disclaimer}}}</div>
+    </div>
   </div>
 </div>
