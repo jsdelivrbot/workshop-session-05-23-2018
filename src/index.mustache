@@ -14,50 +14,15 @@
 
 <body>
   <div class="tracing-image">
-      <div class="menu-banner">
-          <div class="brand-logo">
-              <amp-img src="/assets/topNav.png" width="790" height="104" layout="responsive"></amp-img>
-          </div>
-          <div class="drop-down-button" onclick="toggleMenu()">
-              <amp-img src="/assets/arrowdown.png" width="12" height="7" layout="responsive"></amp-img>
-          </div>
-      </div>
-    <div class="hero">
-        <div id="dropdownMenu" class="dropdown-menu hide-menu">
-            <ul>
-                <li>
-                    <a>Small to Mid-Sized Businesses</a>
-                </li>
-                <li>
-                    <a>Large Businesses</a>
-                </li>
-                <li>
-                    <a>Find a Solution</a>
-                </li>
-                <li>
-                    <a>Manage Accounts</a>
-                </li>
-                <li>
-                    <a>Card Member</a>
-                </li>
-                <li>
-                    <a>Program Administrator</a>
-                </li>
-                <li>
-                    <a>FX International Payments Login</a>
-                </li>
-            </ul>
+    <div class="menu-banner">
+        <div class="brand-logo">
+            <amp-img src="/assets/topNav.png" width="790" height="104" layout="responsive"></amp-img>
         </div>
-      <div class='hero-header'>
-        Whatever size your <br />business, American <br />Express has your back
-      </div>
-      <div class='hero-sub-header'>
-        Explore the many ways American Express can help you say yes to your companies best ideas.
-      </div>
-      <div class='hero-tagline'>
-        How can we help you?
-      </div>
+        <div class="drop-down-button" onclick="toggleMenu()">
+            <amp-img src="/assets/arrowdown.png" width="12" height="7" layout="responsive"></amp-img>
+        </div>
     </div>
+    {{> ./partials/hero/hero.mustache }}
     <div class="square-btns">
       <div class="square-btn">
         Borrow funds to<br />grow your<br />business
