@@ -1,0 +1,22 @@
+<amp-carousel height="300"
+  layout="fixed-height"
+  type="slides" class="article-tile">
+  <div class="article">
+    <div class="article_img"><amp-img width='200' height='100' layout='responsive' src='./assets/wine.png'></amp-img><!-- 3 Card amp-img --></div>
+    <div class="article_header tile-header">Wine Industry</div>
+    <div class="article_copy tile-copy">{{{content.wineIndustry.copy}}}</div>
+    <div class="link"><a href={{{content.wineIndustry.cta.url}}}></a>{{content.wineIndustry.cta.body}}</div>
+  </div>
+  <div class="article">
+    <div class="article_img"><amp-img width='200' height='100' layout='responsive' src='./assets/tailor.png'></amp-img><!-- Smile people amp-img --></div>
+    <div class="article_header tile-header">Rising Interest</div>
+    <div class="article_copy tile-copy">{{{content.risingInterest.copy}}}</div>
+    <div class="link"><a href={{{content.risingInterest.cta.url}}}>{{{content.risingInterest.cta.body}}}</a></div>
+  </div>
+    <div class="article">
+      <div class="article_img"><amp-img width='200' height='100'layout='responsive' src='./assets/wood-shop.png'></amp-img><!-- Homemade twister amp-img --></div>
+      <div class="article_header tile-header">Lorem Ipsum</div>
+      <div class="article_copy tile-copy">{{{content.featureArticle3.copy}}}</div>
+      <div class="link"><a href={{{content.featureArticle3.cta.url}}}>{{{content.featureArticle3.cta.body}}}</a></div>
+    </div>
+</amp-carousel>

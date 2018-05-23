@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <style amp-custom></style>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 </head>
 
 <body>
@@ -55,15 +56,7 @@
     </div>
     {{> ./partials/info-tiles/info-tiles.amp.mustache }}
       {{> ./partials/get-started/get-started.amp.mustache }}
-    <div class="featured-articles horizontal-tiles scrolling-tiles-horizontal">
-      <div class="featured-article">
-      	<div class="featured-article-img"></div>
-      	<div class="featured-article-header tile-header"></div>
-      	<div class="featured-article-copy tile-copy"></div>
-        <div class="link"></div>
-      </div>
-      <div class="featured-articles-footer">Swipe across to view more articles</div>
-    </div>
+      {{> ./partials/feature-articles/feature-articles.amp.mustache }}
     <div class="footer">
 
     </div>
