@@ -112,6 +112,26 @@
         "type": "P-Card PDP ",
         "url": "https://business.americanexpress.com/us/corporate-cards/p-card"
       }
+    },
+    "getStarted": {
+      "head": "Ready to get started?",
+      "text": "Whether you’re a small, mid, or large business, we have a suite of solutions for your needs.",
+      "gold": {
+        "src": "https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/open/category/cardarts/business-gold-rewards.png",
+        "alt": "Business Gold Rewards Card"
+      },
+      "platinum": {
+        "src": "https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/corporate/category/cardarts/corporate-platinum.png",
+        "alt": "Corporate Platinum Card"
+      },
+      "business": {
+        "link": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/",
+        "text": "View all Business Cards"
+      },
+      "corporate": {
+        "link": "https://www.americanexpress.com/us/credit-cards/business/corporate-credit-cards/",
+        "text": "View all Corporate Programs"
+      }
     }
   }
 }
