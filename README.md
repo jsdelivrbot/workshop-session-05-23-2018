@@ -6,7 +6,8 @@
 `npm run build`
 
 #### Local development
-`npm run start:dev`
+`npm run dev`
+
 
 ### Website
 - [View website](https://still-crag-63043.herokuapp.com/)
