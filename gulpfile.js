@@ -146,7 +146,7 @@ gulp.task('stylus', function() {
     .pipe(stylus({
       'include css': true
     }))
-    .pipe(cssnano())
+   // .pipe(cssnano())
     .pipe(gulp.dest('./dist'));
 });
 
