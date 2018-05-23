@@ -1,7 +1,12 @@
 .footer {
-  margin-left: 16px;
-  margin-bottom: 22px;
+  margin:0;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 22px;
+  padding-top: 0px;
+  border-top: 1px solid #E6E6E6;
 }
+
 .footer-title {
   color: #002663;
   font-size: 26px;
