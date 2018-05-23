@@ -8,7 +8,7 @@
   float: left;
   height: 111px;
   width: 125px;
-  background-color: #fff;
+  background-color: #FFF;
   font-size: 0.8em;
   text-align: center;
   line-height: 1.3em;
@@ -16,6 +16,7 @@
 }
 
 .square-btn.blue {
+  color: #FFF;
   background-color: #1271cd;
 }
 

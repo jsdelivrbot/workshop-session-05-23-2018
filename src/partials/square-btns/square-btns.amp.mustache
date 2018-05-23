@@ -1,26 +1,26 @@
 <div class="square-btns">
-  <div class="square-btn active" tabindex="" role="button" on="tap:AMP.setState({currentAnimal: 'borrow-funds'})">
+  <div class="square-btn" tabindex="" role="button" on="tap:AMP.setState({currentAnimal: 'borrow-funds'})" [class]="(tilesContent.squareButtonClass.style + ' ' + (currentAnimal == 'borrow-funds' ? tilesContent.activatedClass.style : tilesContent.deactivatedClass.style))">
     <div class="icon business"></div>
     Borrow funds to
     <br />grow your
     <br />business
   </div>
-  <div class="square-btn" tabindex="" role="button" on="tap:AMP.setState({currentAnimal: 'maximize-rewards'})">
+  <div class="square-btn" tabindex="" role="button" on="tap:AMP.setState({currentAnimal: 'maximize-rewards'})" [class]="(tilesContent.squareButtonClass.style + ' ' + (currentAnimal == 'maximize-rewards' ? tilesContent.activatedClass.style : tilesContent.deactivatedClass.style))">
     <div class="icon rewards"></div>
     Maximize rewards
     <br />on business spend
   </div>
-  <div class="square-btn" tabindex="" role="button" on="tap:AMP.setState({currentAnimal: 'manage-employee-expenses'})">
+  <div class="square-btn" tabindex="" role="button" on="tap:AMP.setState({currentAnimal: 'manage-employee-expenses'})" [class]="(tilesContent.squareButtonClass.style + ' ' + (currentAnimal == 'manage-employee-expenses' ? tilesContent.activatedClass.style : tilesContent.deactivatedClass.style))">
     <div class="icon airplane"></div>
     Manage employee
     <br />expenses
   </div>
-  <div class="square-btn" tabindex="" role="button" on="tap:AMP.setState({currentAnimal: 'improve-accounts'})">
+  <div class="square-btn" tabindex="" role="button" on="tap:AMP.setState({currentAnimal: 'improve-accounts'})" [class]="(tilesContent.squareButtonClass.style + ' ' + (currentAnimal == 'improve-accounts' ? tilesContent.activatedClass.style : tilesContent.deactivatedClass.style))">
     <div class="icon card-swipe"></div>
     Improve accounts
     <br />payable processes
   </div>
-  <div class="square-btn" tabindex="" role="button" on="tap:AMP.setState({currentAnimal: 'pay-suppliers'})">
+  <div class="square-btn" tabindex="" role="button" on="tap:AMP.setState({currentAnimal: 'pay-suppliers'})" [class]="(tilesContent.squareButtonClass.style + ' ' + (currentAnimal == 'pay-suppliers' ? tilesContent.activatedClass.style : tilesContent.deactivatedClass.style))">
     <div class="icon dollars-recycling"></div>
     Pay suppliers
     <br />globally
