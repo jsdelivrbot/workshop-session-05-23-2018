@@ -9,6 +9,7 @@ npm-debug.log
 .DS_Store
 *.tmp*
 cached-data.json
+dist
 
 # Docker
 Dockerfile
