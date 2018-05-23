@@ -14,6 +14,12 @@
 ### Tools
 - [Online Validator](https://validator.ampproject.org/)
 
+
+### Mocks
+
+#### Stage-0
+![alt text](./Stage01-mocks.png "Stage01-mocks")
+
 ### Resources
 - [amp by example](https://ampbyexample.com/)
 - [spec](https://www.ampproject.org/docs/fundamentals/spec#html-tags)
