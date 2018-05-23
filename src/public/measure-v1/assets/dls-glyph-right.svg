@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="12px" viewBox="0 0 6 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>dls-glyph-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="US-JFD-large" transform="translate(-1071.000000, -242.000000)">
+            <g id="08-glyphs/dls-glyph-right" transform="translate(1068.000000, 242.000000)">
+                <g id="dls-glyph-right">
+                    <rect id="bounding" x="0" y="0" width="12" height="12"></rect>
+                    <path d="M8.78718784,5.47035135 L4.27940261,0.96848085 C3.98771276,0.67717305 3.51040504,0.67717305 3.21876739,0.96848085 C2.92707754,1.25978865 2.92707754,1.73642565 3.21876739,2.02772588 L7.19622731,5.99998155 L3.21876776,9.97227375 C2.92707791,10.2635817 2.92707791,10.7402188 3.21876776,11.0315189 C3.51040541,11.3228275 3.98772026,11.3228275 4.27940299,11.0315189 L8.78718784,6.5296413 C9.07887769,6.2383404 9.07887769,5.76165893 8.78718784,5.47035135 Z" fill="#006FCF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

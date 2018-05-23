@@ -24,22 +24,6 @@ const escapeRegex = require('escape-string-regexp');
 const Mustache = require("mustache");
 const R = require("ramda");
 
-const assets = function () {
-  gulp.src("./src/assets/**/*")
-    .pipe(flatten())
-    .pipe(gulp.dest('dist/assets'));
-}
-
-const html = function () {
-  gulp.src("./dist/*.html")
-      .pipe(include())
-      .pipe(inject.after('style amp-custom>', getCssContent(path.join(__dirname, 'dist/css/main.css'))))
-      .pipe(gulp.dest("./dist")).on('end', assets)
-      .pipe(reload({
-          stream: true
-        }));
-};
-
 const getMustacheData = function (file) {
   const files = [
     [path.join(path.dirname(file.path), 'data.js'), (filepath) => {
@@ -81,6 +65,19 @@ const getCssContent = (filepath) => {
   ${content}
   `
 };
+
+gulp.task('publicFolder', function() {
+  return gulp.src([
+    "./src/public/**/*",
+  ], { base: path.join(__dirname, 'src')})
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('assetFolder', function() {
+  return gulp.src("./src/assets/**/*")
+    .pipe(flatten())
+    .pipe(gulp.dest('dist/assets'))
+});
 
 gulp.task('cleanup', function(done) {
   del([
@@ -130,7 +127,17 @@ gulp.task('mustache', ['stylus'], function() {
       extension: '.html'
     }))
     .pipe(gulp.dest('./dist'))
-    .on('end', html);
+    .on('end', () => {
+      runSequence('assetFolder' , 'publicFolder', () => {
+        gulp.src("./dist/*.html")
+            .pipe(include())
+            .pipe(inject.after('style amp-custom>', getCssContent(path.join(__dirname, 'dist/css/main.css'))))
+            .pipe(gulp.dest("./dist"))
+            .pipe(reload({
+                stream: true
+              }));
+      })
+    });
 });
 
 gulp.task('stylus', function() {

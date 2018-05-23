@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="12px" viewBox="0 0 6 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>dls-glyph-right copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Open-desktop-v2-Copy-2" transform="translate(-1039.000000, -881.000000)">
+            <g id="dls-glyph-right-copy" transform="translate(1036.000000, 881.000000)">
+                <rect id="bounding" x="0" y="0" width="11.9680851" height="12.3303763"></rect>
+                <path d="M8.76381766,5.62095754 L4.26802122,0.99514444 C3.97710714,0.695816542 3.50106885,0.695816542 3.21020684,0.99514444 C2.91929276,1.29447234 2.91929276,1.7842318 3.21020684,2.08355192 L7.17708841,6.16516917 L3.21020721,10.246824 C2.91929313,10.546152 2.91929313,11.0359116 3.21020721,11.3352315 C3.50106923,11.6345603 3.97711462,11.6345603 4.2680216,11.3352315 L8.76381766,6.70941117 C9.05473174,6.41009037 9.05473174,5.9202852 8.76381766,5.62095754 Z" id="dls-glyph-right" fill="#006FCF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
