@@ -20,6 +20,13 @@
       margin: 1rem;
     }
 
+    .clear {
+      clear: both;
+      border: 0;
+      padding: 0;
+      margin: 0;
+    }
+
     .tracing-image {
       background: url(https://slack-imgs.com/?c=1&url=https%3A%2F%2Fs3.invisionapp-cdn.com%2Fk8s-private-aexp-cluster%2Fscreens%2Ffiles%2F219575135.jpg%3Fx-amz-meta-iv%3D3%26response-cache-control%3Dmax-age%253D2419200%26x-amz-meta-ck%3Df5908afbb337851d7f7e61ce5b6de08e%26AWSAccessKeyId%3DAKIAIAWTUDIXJUYQSXEQ%26Expires%3D1530403200%26Signature%3D%252BrVZQKrj1BxT2pW8waA99u%252FBSIc%253D) no-repeat;
       background-size: 100%;
@@ -84,6 +91,56 @@
     .get-started {
       background-color: #fff;
       padding: 10% 5%;
+    }
+
+    .get-started .head {
+      font-family: BentonSans-Book;
+      font-size: 24px;
+      color: #4E5356;
+      line-height: 30px;
+    }
+
+    .get-started .text {
+      font-family: BentonSans-Book;
+      font-size: 14px;
+      color: #727272;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
+
+    .get-started .card:first-child {
+      margin-right: 5%;
+    }
+
+    .get-started .cards {
+      margin-top: 20px;
+    }
+
+    .get-started .card {
+      width: 47.5%;
+      display: block;
+      float: left;
+    }
+
+    .get-started button {
+      border-radius: 4px;
+      font-family: HelveticaNeue;
+      font-size: 16px;
+      text-align: center;
+      width: 100%;
+      height: 50px;
+      margin-top: 20px;
+    }
+
+    .get-started button.primary {
+      background: #006FCF;
+      color: #FFFFFF;
+    }
+
+    .get-started button.secondary {
+      background: #FFFFFF;
+      border: 1px solid #006FCF;
+      color: #006FCF;
     }
   </style>
 </head>
@@ -154,14 +211,17 @@
       </div>
     </div>
     <div class="get-started">
-      <h2>Ready to get started?</h2>
-      <span>
+      <h2 class="head">Ready to get started?</h2>
+      <span class="text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </span>
-      <img src='https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/open/category/cardarts/business-gold-rewards.png' alt='Business Gold Rewards Card'>
-      <img src='https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/corporate/category/cardarts/corporate-platinum.png' alt='Corporate Platinum Card'>
-      <button>View all Business Cards</button>
-      <button>View all Corporate Programs</button>
+      <div class="cards">
+        <img class="card" src='https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/open/category/cardarts/business-gold-rewards.png' alt='Business Gold Rewards Card'>
+        <img class="card" src='https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/corporate/category/cardarts/corporate-platinum.png' alt='Corporate Platinum Card'>
+        <div class="clear"></div>
+      </div>
+      <button class="primary">View all Business Cards</button>
+      <button class="secondary">View all Corporate Programs</button>
     </div>
     <div class="featured-articles horizontal-tiles scrolling-tiles-horizontal">
       <div class="featured-article">
