@@ -16,6 +16,7 @@
 
 ### Resources
 - [amp by example](https://ampbyexample.com/)
+- [spec](https://www.ampproject.org/docs/fundamentals/spec#html-tags)
 
 ### Others
 - [gulp-uncss](https://github.com/ben-eb/gulp-uncss)
