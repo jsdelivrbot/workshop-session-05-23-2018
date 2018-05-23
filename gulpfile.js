@@ -17,16 +17,17 @@ const mustache = require("gulp-mustache");
 const rename = require("gulp-rename");
 const gulpMerge = require('gulp-merge');
 const yaml = require('js-yaml')
-var through = require('through2');
-var PluginError = require('plugin-error')
-var replaceExtension = require('replace-ext')
-var escapeRegex = require('escape-string-regexp');
+const through = require('through2');
+const PluginError = require('plugin-error')
+const replaceExtension = require('replace-ext')
+const escapeRegex = require('escape-string-regexp');
 const Mustache = require("mustache");
+const R = require("ramda");
 
 const assets = function () {
-    gulp.src("./src/assets/**/*")
-        .pipe(flatten())
-        .pipe(gulp.dest('dist/assets'));
+  gulp.src("./src/assets/**/*")
+    .pipe(flatten())
+    .pipe(gulp.dest('dist/assets'));
 }
 
 const getMustacheData = function (file) {
@@ -52,13 +53,13 @@ const getMustacheData = function (file) {
     const filepath = files[i][0];
     if (fs.existsSync(filepath)) {
       try {
-        return files[i][1](filepath); 
+        return files[i][1](filepath);
       } catch(e) {
         return {
           error: new gutil.PluginError("ERROR", `while reading json file ${filepath} \n ${e.stack}`)
         }
-      } 
-    }  
+      }
+    }
   }
   return {};
 }
@@ -85,13 +86,13 @@ gulp.task('cleanup', function(done) {
   });
 });
 
-gulp.task('mustache', ['stylus'], function() {  
+gulp.task('mustache', ['stylus'], function() {
     gulpMerge(
       gulp.src(["./src/*.mustache", "./src/*.html"], { base: path.join(__dirname, 'src/')}),
       gulp.src([
         "./examples/**/*.mustache",
         "./examples/**/*.html",
-      ], { base: path.join(__dirname)})      
+      ], { base: path.join(__dirname)})
     )
     .pipe(plumber())
     .pipe((function () {
@@ -99,33 +100,22 @@ gulp.task('mustache', ['stylus'], function() {
     		if (file.isNull()) {
     			return callback(null, file);
     		}
-                
+
     		if (file.isStream()) {
     			return callback(new gutil.PluginError("gulp-filechange", "Streaming not supported."));
     		}
-        
+
         const templateData = getMustacheData(file);
-        
+
         if(templateData.error) {
           return callback(templateData.error);
         }
-        
-        file.data = templateData.data;
-        //const filepath = path.join(path.dirname(file.path), 'data.json');
-                
-        // if (fs.existsSync(filepath)) {
-        //   try {
-        //     file.data = {
-        //       title: "Joe",
-        //       calc: function () {
-        //         return 2 + 4;
-        //       }
-        //     }; 
-        //   } catch(e) {
-        //     return callback(new gutil.PluginError("ERROR", `while reading json file ${filepath}`));
-        //   } 
-        // }        
-        // 
+
+        const contentData = require('./src/content.json');
+
+        file.data = R.merge(templateData.data, contentData);
+        fs.writeFileSync(path.join(__dirname, './cached-data.json'), JSON.stringify(file.data, null, '\t'))
+
     		callback(null, file);
     	});
     })())
@@ -134,7 +124,7 @@ gulp.task('mustache', ['stylus'], function() {
     }))
     .pipe(gulp.dest('./dist')).on('end', html);
 });
-  
+
 gulp.task('stylus', function() {
   return gulp.src('./src/css/*.styl', { base: path.join(__dirname, 'src/')})
     .pipe(plumber())
@@ -153,7 +143,7 @@ const gulpAmpValidator = require('gulp-amphtml-validator');
 gulp.task('validate-amp-html', () => {
     gulp.src('src/**/*.html')
         // Validate the input and attach the validation result to the "amp" property
-        // of the file object. 
+        // of the file object.
         .pipe(gulpAmpValidator.validate())
         // Print the validation results to the console.
         .pipe(gulpAmpValidator.format())
