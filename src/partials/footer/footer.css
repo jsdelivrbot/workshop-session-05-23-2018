@@ -1,0 +1,24 @@
+.footer {
+  margin-left: 16px;
+  margin-bottom: 22px;
+}
+.footer-title {
+  color: #002663;
+  font-size: 26px;
+  margin-left: 0;
+}
+.american-logo-flag {
+  background: url(./assets/iNav_ngi_sprite_new.png) no-repeat;
+  background-position: -172px -475px;
+  margin: 1px 4px 0 0;
+  width: 16px;
+  height: 11px;
+  float: left;
+}
+.footer_language-toggle, .footer_country-toggle {
+  margin-bottom:22px;
+}
+.footer_links {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
