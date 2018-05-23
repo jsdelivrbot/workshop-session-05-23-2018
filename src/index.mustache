@@ -46,6 +46,13 @@
         cursor: pointer;
     }
 
+    .hide-menu {
+        display: none;
+    }
+    .dropdown-menu {
+        position: absolute;
+        width: 100%;
+    }
     .hero{
       color: #fff;
       height: 204px;
@@ -201,11 +208,36 @@
           <div class="brand-logo">
               <amp-img src="/assets/topNav.png" width="790" height="104" layout="responsive"></amp-img>
           </div>
-          <div class="drop-down-button">
+          <div class="drop-down-button" onclick="toggleMenu()">
               <amp-img src="/assets/arrowdown.png" width="12" height="7" layout="responsive"></amp-img>
           </div>
       </div>
     <div class="hero">
+        <div id="dropdownMenu" class="dropdown-menu hide-menu">
+            <ul>
+                <li>
+                    <a>Small to Mid-Sized Businesses</a>
+                </li>
+                <li>
+                    <a>Large Businesses</a>
+                </li>
+                <li>
+                    <a>Find a Solution</a>
+                </li>
+                <li>
+                    <a>Manage Accounts</a>
+                </li>
+                <li>
+                    <a>Card Member</a>
+                </li>
+                <li>
+                    <a>Program Administrator</a>
+                </li>
+                <li>
+                    <a>FX International Payments Login</a>
+                </li>
+            </ul>
+        </div>
       <div class='hero-header'>
         Whatever size your <br />business, American <br />Express has your back
       </div>
@@ -301,6 +333,11 @@
       <div class="footer_copyright-text">Copyright &copy; 2016 American Express Company</div>
     </div>
   </div>
+  <script>
+      function toggleMenu() {
+          document.getElementById("dropdownMenu").classList.toggle("hide-menu");
+      }
+  </script>
 </body>
 
 </html>
