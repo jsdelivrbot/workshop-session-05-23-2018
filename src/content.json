@@ -9,6 +9,14 @@
         "url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-simply-cash-credit-card-amex"
       }
     },
+    "vacTile": {
+      "copy": "Credit Cards that let you buy above your credit limit<sup>*</sup>, for purchasing power to help buy what you need for your business",
+      "disclaimer": "*The amount you can spend above your credit limit is not unlimited. It adjusts with the use of your Card, your payment history, credit record, financial resources known to us, and other factors.",
+      "cta": {
+        "body":"See all Business Cards",
+        "url":"https://www.americanexpress.com/us/credit-cards/business/business-credit-cards"
+      }
+    },
     "managingEmployeeExpenses": {
       "copy": "Set boundaries and stay up-to-date on employee expenses with Business Credit Cards for up to 99 employees, starting at $0 annual fee",
       "cta": {
@@ -34,7 +42,8 @@
       }
     },
     "businessLoans": {
-      "copy": "Unsecured, fixed-rate business loans between $3,500 and $50,000* with your choice of repayment period, for pre-approved Card Members *You must be pre-approved for an American Express® Business Loan offer in order to apply. Your pre-approved loan amount and maximum APR are based on the creditworthiness of you and your business and other factors. Not all customers will be pre-approved for the lowest APR or the highest loan amount.",
+      "copy": "Unsecured, fixed-rate business loans between $3,500 and $50,000* with your choice of repayment period, for pre-approved Card Members.",
+      "disclaimer": "*You must be pre-approved for an American Express® Business Loan offer in order to apply. Your pre-approved loan amount and maximum APR are based on the creditworthiness of you and your business and other factors. Not all customers will be pre-approved for the lowest APR or the highest loan amount.",
       "cta": {
         "body": "Learn More",
         "type": "Business Loans Page",
