@@ -2,7 +2,7 @@
   "name": "workshop-session-05-23-2018",
   "description": "A sample AMP project",
   "repository": "https://github.com/carlosmarte/workshop-session-05-23-2018.git",
-  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "logo": "https://cdn.jsdelivr.net/gh/heroku/node-js-getting-started/public/node.svg",
   "keywords": ["node", "express", "AMP"],
   "image": "heroku/nodejs"
 }
